@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/uv47Bul.gif)
+![](https://i.imgur.com/HtH2ukI.gif)
 > 目前國際間緊急授權使用的武漢肺炎（新型冠狀病毒）疫苗包括 AstraZeneca（AZ）、Pfizer-BioNTech、Moderna 與 Janssen 等廠牌，在完整接種兩劑（或一劑）後，對預防 PCR 確診 SARS-CoV-2（疫苗株或 D614G 株）之有症狀感染，其保護力約有六至九成
