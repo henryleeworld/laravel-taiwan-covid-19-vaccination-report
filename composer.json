@@ -9,17 +9,17 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.3.0",
-        "laravel/framework": "^8.57",
+        "laravel/framework": "^8.62",
         "laravel/tinker": "^2.6",
         "yajra/laravel-datatables-oracle": "^9.18"
     },
     "require-dev": {
-        "facade/ignition": "^2.12",
-        "fakerphp/faker": "^1.15.0",
-        "laravel/sail": "^1.10.0",
-        "mockery/mockery": "^1.4.3",
-        "nunomaduro/collision": "^5.9",
-        "phpunit/phpunit": "^9.5.8"
+        "facade/ignition": "^2.14",
+        "fakerphp/faker": "^1.16.0",
+        "laravel/sail": "^1.11.0",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
         "psr-4": {
