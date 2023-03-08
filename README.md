@@ -1,4 +1,4 @@
-# Laravel 9 台灣武漢肺炎（新型冠狀病毒）疫苗接種報告
+# Laravel 10 台灣武漢肺炎（新型冠狀病毒）疫苗接種報告
 
 武漢肺炎（新型冠狀病毒）肆虐全球，疫苗是全人類期待的核心解藥。嚴守一年多的台灣，2021 年 5 月出現社區破口，累計本土病例數超越境外移入，社會大眾不得不正視疫苗庫存量、民眾接種率在防疫戰中扮演的關鍵角色。
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/zV9s40l.gif)
+![](https://i.imgur.com/E5gzSvn.gif)
 > 目前國際間緊急授權使用的武漢肺炎（新型冠狀病毒）疫苗包括 AstraZeneca（AZ）、Pfizer-BioNTech、Moderna 與 Janssen 等廠牌，在完整接種兩劑（或一劑）後，對預防 PCR 確診 SARS-CoV-2（疫苗株或 D614G 株）之有症狀感染，其保護力約有六至九成
