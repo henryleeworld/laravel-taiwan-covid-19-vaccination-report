@@ -54,6 +54,6 @@ class VaccinationService
                                ->editColumn('a01', function ($vaccination) {
                                    return Carbon::parse($vaccination['a01'])->format('Y-m-d');
                                })
-                               ->rawColumns(['id', 'a01', 'a02', 'a03', 'a04', 'a05', 'a06', 'a07'])->toJson();
+                               ->rawColumns(['id', 'a01', 'a02', 'a03', 'a04', 'a05', 'a06', 'a07', 'a08', 'a09', 'a10', 'a11'])->toJson();
     }
 }
