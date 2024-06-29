@@ -2,24 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\VaccinationService;
+use App\Http\Integrations\Covid_19\Covid19Connector;
 use Illuminate\Http\Request;
 
-class VaccinationController extends Controller
+class Covid19Controller extends Controller
 {
 
-    private $vaccinationService;
+    private $covid19Connector;
 
     /**
-     * Instantiate a new VaccinationController instance.
+     * Instantiate a new Covid19Controller instance.
      *
-     * @param VaccinationService $vaccinationService Vaccination service
+     * @param Covid19Connector $covid19Connector COVID-19 connector
      *
      * @return void
      */
-    public function __construct(VaccinationService $vaccinationService)
+    public function __construct(Covid19Connector $covid19Connector)
     {
-        $this->vaccinationService = $vaccinationService;
+        $this->covid19Connector = $covid19Connector;
     }
 
     /**
@@ -42,7 +42,7 @@ class VaccinationController extends Controller
     public function getDailyBreakdownByDistrictData(Request $request)
     {
         if ($request->ajax()) {
-            return $this->vaccinationService->getDailyBreakdownByDistrictDataTable();
+            return $this->covid19Connector->getDailyBreakdownByDistrictDataTable();
         }
         return view('daily-report');
     }

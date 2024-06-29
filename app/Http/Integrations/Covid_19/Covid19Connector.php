@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services;
+namespace App\Http\Integrations\Covid_19;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 
-class VaccinationService
+class Covid19Connector
 {
     /**
      * @var client
@@ -13,7 +13,7 @@ class VaccinationService
     protected $client;
 
     /**
-     * Instantiate a new VaccinationService instance.
+     * Instantiate a new Covid19Connector instance.
      *
      * @param Client $client Client
      *
@@ -48,7 +48,7 @@ class VaccinationService
      */
     public function getDailyBreakdownByDistrictDataTable()
     {
-            $vaccination = $this->makeHttpRequest(config('client.daily_breakdown_vaccination_by_district_url'));
+            $vaccination = $this->makeHttpRequest(config('services.covid_19.url.daily_breakdown_vaccination_by_district'));
             $vaccination = $vaccination['data'];
             return datatables()->of($vaccination)
                                ->editColumn('a01', function ($vaccination) {
