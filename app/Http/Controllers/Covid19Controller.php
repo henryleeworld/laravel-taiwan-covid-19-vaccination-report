@@ -12,10 +12,6 @@ class Covid19Controller extends Controller
 
     /**
      * Instantiate a new Covid19Controller instance.
-     *
-     * @param Covid19Connector $covid19Connector COVID-19 connector
-     *
-     * @return void
      */
     public function __construct(Covid19Connector $covid19Connector)
     {
@@ -24,8 +20,6 @@ class Covid19Controller extends Controller
 
     /**
      * Create daily breakdown by district dashboard.
-     *
-     * @return void
      */
     public function showDailyBreakdownByDistrict()
     {
@@ -33,11 +27,7 @@ class Covid19Controller extends Controller
     }
 
     /**
-     * Get daily breakdown by district data
-     *
-     * @param Request $request Request
-     *
-     * @return string | \Illuminate\Contracts\Support\Renderable
+     * Get daily breakdown by district data.
      */
     public function getDailyBreakdownByDistrictData(Request $request)
     {
