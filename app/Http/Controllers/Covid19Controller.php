@@ -2,20 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Integrations\Covid_19\Covid19Connector;
+use App\Http\Integrations\Covid19\Covid19Connector;
 use Illuminate\Http\Request;
 
 class Covid19Controller extends Controller
 {
-
-    private $covid19Connector;
-
     /**
      * Instantiate a new Covid19Controller instance.
      */
-    public function __construct(Covid19Connector $covid19Connector)
+    public function __construct(private Covid19Connector $covid19Connector)
     {
-        $this->covid19Connector = $covid19Connector;
     }
 
     /**

@@ -1,33 +1,21 @@
 <?php
 
-namespace App\Http\Integrations\Covid_19;
+namespace App\Http\Integrations\Covid19;
 
-use Carbon\Carbon;
 use GuzzleHttp\Client;
+use Illuminate\Support\Carbon;
 
 class Covid19Connector
 {
     /**
-     * @var client
-     */
-    protected $client;
-
-    /**
      * Instantiate a new Covid19Connector instance.
-     *
-     * @param Client $client Client
-     *
-     * @return void
      */
-    public function __construct(Client $client)
+    public function __construct(protected Client $client)
     {
-        $this->client = $client;
     }
 
     /**
      * Make Http request.
-     *
-     * @return mixed
      */
     private function makeHttpRequest($url)
     {
@@ -43,10 +31,8 @@ class Covid19Connector
 
     /**
      * Get daily data table
-     *
-     * @return string
      */
-    public function getDailyBreakdownByDistrictDataTable()
+    public function getDailyBreakdownByDistrictDataTable(): string
     {
             $vaccination = $this->makeHttpRequest(config('services.covid_19.url.daily_breakdown_vaccination_by_district'));
             $vaccination = $vaccination['data'];
